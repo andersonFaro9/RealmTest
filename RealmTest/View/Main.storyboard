@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RealmTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQC-JM-Mva">
+                                <rect key="frame" x="20" y="80" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe um texto aqui:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bee-bo-qeq">
+                                <rect key="frame" x="20" y="51" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQP-H1-hHf">
+                                <rect key="frame" x="20" y="127" width="374" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.52156862749999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0BK-g3-GnR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9de-4A-k0r">
+                                <rect key="frame" x="25" y="192" width="369" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9de-4A-k0r" firstAttribute="top" secondItem="PQP-H1-hHf" secondAttribute="bottom" constant="35" id="0cb-4F-apb"/>
+                            <constraint firstItem="PQP-H1-hHf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7zW-yI-bc2"/>
+                            <constraint firstAttribute="trailing" secondItem="9de-4A-k0r" secondAttribute="trailing" constant="20" id="PXh-IR-LNP"/>
+                            <constraint firstItem="kQC-JM-Mva" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="S0A-n8-Ffl"/>
+                            <constraint firstItem="bee-bo-qeq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="ZN5-VD-X4Y"/>
+                            <constraint firstItem="kQC-JM-Mva" firstAttribute="top" secondItem="bee-bo-qeq" secondAttribute="bottom" constant="8" id="cjv-HK-Lgt"/>
+                            <constraint firstItem="PQP-H1-hHf" firstAttribute="top" secondItem="kQC-JM-Mva" secondAttribute="bottom" constant="17" id="d6F-La-2mT"/>
+                            <constraint firstAttribute="trailing" secondItem="bee-bo-qeq" secondAttribute="trailing" constant="222" id="kEE-KW-99W"/>
+                            <constraint firstItem="9de-4A-k0r" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="kFl-fK-OLD"/>
+                            <constraint firstAttribute="trailing" secondItem="kQC-JM-Mva" secondAttribute="trailing" constant="20" id="l3q-SW-RYd"/>
+                            <constraint firstAttribute="trailing" secondItem="PQP-H1-hHf" secondAttribute="trailing" constant="20" id="sYc-8i-9iI"/>
+                            <constraint firstItem="bee-bo-qeq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="xO0-UJ-JNp"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="btnAdd" destination="PQP-H1-hHf" id="wOl-9J-OxF"/>
+                        <outlet property="resultLabel" destination="9de-4A-k0r" id="lxB-2O-EUY"/>
+                        <outlet property="textView" destination="kQC-JM-Mva" id="0Nh-Sv-MZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="339"/>
+        </scene>
+    </scenes>
+</document>
